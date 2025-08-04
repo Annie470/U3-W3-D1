@@ -6,16 +6,48 @@
 const myName : string = "CatZilla";
 const myAge : number = 30;
 const myType : boolean = true;
+
 /*
-3) Tipizza il parametro della seguente funzione:
-const greet = (name) => { return "Ciao " + name }
-4) Specifica il tipo di ritorno della seguente funzione:
-const sum = (a: number, b: number) => { return a + b }
-5) Crea una funzione che accetti un prezzo e restituisca il prezzo con IVA (22%). Usa i tipi appropriati.
-6) Crea una funzione che concateni due stringhe e restituisca la lunghezza totale.
+3) Tipizza il parametro della seguente funzione: */
+const greet = (name : string) => { return "Ciao " + name }
+
+/*
+4) Specifica il tipo di ritorno della seguente funzione: */
+const sum = (a: number, b: number): number => { return a + b }
+
+/*
+5) Crea una funzione che accetti un prezzo e restituisca il prezzo con IVA (22%). Usa i tipi appropriati.*/
+const ivaFun =( price : number) : number=> {
+return price * 1.22
+}
+console.log(ivaFun(8));
+
+/*
+6) Crea una funzione che concateni due stringhe e restituisca la lunghezza totale.*/
+const stringiline =(s1 :string, s2: string) : number => {
+    return (s1 + s2).length
+}
+console.log(stringiline("Felix", "theCat"))
+
+/*
 7) Cos'è un Type Union e come si scrive?
-8) Crea una variabile che possa contenere un numero, null o undefined.
-9) Crea un tipo per rappresentare i giorni della settimana usando union di stringhe letterali.
+E' un modo di tipizzare una variabile che può essere di un tipo o un'altro */
+let fluido : string | boolean ;
+fluido = false;
+fluido = "vero";
+
+/*
+8) Crea una variabile che possa contenere un numero, null o undefined. */
+let indecisa : number | null | undefined;
+
+/*
+9) Crea un tipo per rappresentare i giorni della settimana usando union di stringhe letterali.*/
+type ggiorno = "Lun" | "Mar" | "Mer"
+| "Gio" | "Ven" | "Sab" | "Dom"
+
+let quando : ggiorno = "Sab";
+
+/*
 10) Tipizza il seguente array di numeri nei due modi possibili:
 const numbers = [1, 2, 3]
 11) Crea una tupla per definire un array di 5 elementi, i primi 3 devono essere stringhe e gli ultimi due numeri.

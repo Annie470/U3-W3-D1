@@ -7,15 +7,34 @@ var myName = "CatZilla";
 var myAge = 30;
 var myType = true;
 /*
-3) Tipizza il parametro della seguente funzione:
-const greet = (name) => { return "Ciao " + name }
-4) Specifica il tipo di ritorno della seguente funzione:
-const sum = (a: number, b: number) => { return a + b }
-5) Crea una funzione che accetti un prezzo e restituisca il prezzo con IVA (22%). Usa i tipi appropriati.
-6) Crea una funzione che concateni due stringhe e restituisca la lunghezza totale.
+3) Tipizza il parametro della seguente funzione: */
+var greet = function (name) { return "Ciao " + name; };
+/*
+4) Specifica il tipo di ritorno della seguente funzione: */
+var sum = function (a, b) { return a + b; };
+/*
+5) Crea una funzione che accetti un prezzo e restituisca il prezzo con IVA (22%). Usa i tipi appropriati.*/
+var ivaFun = function (price) {
+    return price * 1.22;
+};
+console.log(ivaFun(8));
+/*
+6) Crea una funzione che concateni due stringhe e restituisca la lunghezza totale.*/
+var stringiline = function (s1, s2) {
+    return (s1 + s2).length;
+};
+console.log(stringiline("Felix", "theCat"));
+/*
 7) Cos'è un Type Union e come si scrive?
-8) Crea una variabile che possa contenere un numero, null o undefined.
-9) Crea un tipo per rappresentare i giorni della settimana usando union di stringhe letterali.
+E' un modo di tipizzare una variabile che può essere di un tipo o un'altro */
+var fluido;
+fluido = false;
+fluido = "vero";
+/*
+8) Crea una variabile che possa contenere un numero, null o undefined. */
+var indecisa;
+var quando = "Sab";
+/*
 10) Tipizza il seguente array di numeri nei due modi possibili:
 const numbers = [1, 2, 3]
 11) Crea una tupla per definire un array di 5 elementi, i primi 3 devono essere stringhe e gli ultimi due numeri.
