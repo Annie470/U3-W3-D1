@@ -36,12 +36,15 @@ var indecisa;
 var quando = "Sab";
 /*
 10) Tipizza il seguente array di numeri nei due modi possibili:
-const numbers = [1, 2, 3]
-11) Crea una tupla per definire un array di 5 elementi, i primi 3 devono essere stringhe e gli ultimi due numeri.
-12) Qual è la differenza tra type e interface?
-13) Definisci un'interfaccia in TypeScript per un oggetto dotato di proprietà "firstname", "lastname", e "age".
-14) Crea un'interfaccia per un utente con email obbligatoria e telefono opzionale.
-15) Crea un array tipizzato di oggetti "Studente" con nome e voto.
+const numbers = [1, 2, 3]*/
+var numbers1 = [1, 2, 3];
+var numbers2 = [1, 2, 3];
+/*
+11) Crea una tupla per definire un array di 5 elementi, i primi 3 devono essere stringhe e gli ultimi due numeri.*/
+var arrayFive = ["a", "b", "c", 5, 8];
+/*
+15) Crea un array tipizzato di oggetti "Studente" con nome e voto.*/
+/*
 16) Crea un'interfaccia base "Veicolo" e estendila per creare "Auto".
 17) Crea un oggetto che implementi l'interfaccia Auto.
 18) Cosa sono i Generics in TypeScript?
