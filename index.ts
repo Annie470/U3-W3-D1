@@ -92,13 +92,30 @@ interface Veicolo {
 interface Auto extends Veicolo {
     brand : string
 }
+
+/*
+17) Crea un oggetto che implementi l'interfaccia Auto.*/
 const Z100 : Auto = {
     guida: true, ruote: 4, brand: "ZillaWrum"
 }
 
 /*
-17) Crea un oggetto che implementi l'interfaccia Auto.
 18) Cosa sono i Generics in TypeScript?
+E' un tipo che viene passato come argomento per un interface e le rende piu flessibili
+
 19) È possibile avere più tipi generici in un'interfaccia?
+Si
+
 20) Crea un'interfaccia generica per una risposta API.  
 */ 
+interface RisultatoApi<G> {
+id : number,
+description : string,
+data : G
+}
+
+const data : RisultatoApi<number[]> = {
+    id : 23546,
+    description : "Very tiny and fluffy",
+    data : [ 30, 25]
+}

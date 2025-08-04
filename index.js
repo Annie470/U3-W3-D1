@@ -43,12 +43,13 @@ var numbers2 = [1, 2, 3];
 11) Crea una tupla per definire un array di 5 elementi, i primi 3 devono essere stringhe e gli ultimi due numeri.*/
 var arrayFive = ["a", "b", "c", 5, 8];
 var Tito = { nome: "Tito", voto: 28 };
+/*
+17) Crea un oggetto che implementi l'interfaccia Auto.*/
 var Z100 = {
     guida: true, ruote: 4, brand: "ZillaWrum"
 };
-/*
-17) Crea un oggetto che implementi l'interfaccia Auto.
-18) Cosa sono i Generics in TypeScript?
-19) È possibile avere più tipi generici in un'interfaccia?
-20) Crea un'interfaccia generica per una risposta API.
-*/ 
+var data = {
+    id: 23546,
+    description: "Very tiny and fluffy",
+    data: [30, 25]
+};
