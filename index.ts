@@ -77,10 +77,26 @@ interface Utente {
 
 /*
 15) Crea un array tipizzato di oggetti "Studente" con nome e voto.*/
-
+interface Studente {
+    nome : string,
+    voto : number
+}
+const Tito : Studente = { nome : "Tito", voto : 28}
 
 /*
-16) Crea un'interfaccia base "Veicolo" e estendila per creare "Auto".
+16) Crea un'interfaccia base "Veicolo" e estendila per creare "Auto".*/
+interface Veicolo {
+    guida : boolean,
+    ruote : number
+}
+interface Auto extends Veicolo {
+    brand : string
+}
+const Z100 : Auto = {
+    guida: true, ruote: 4, brand: "ZillaWrum"
+}
+
+/*
 17) Crea un oggetto che implementi l'interfaccia Auto.
 18) Cosa sono i Generics in TypeScript?
 19) È possibile avere più tipi generici in un'interfaccia?
